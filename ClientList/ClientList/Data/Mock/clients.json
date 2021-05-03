@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "code": "397458",
+        "name":"Alexandra",
+        "phoneNumber":"691533022",
+        "email":"ale.bussines@gmail.com",
+        "visited": false
+    },
+    {
+        "id": 2,
+        "code": "127462",
+        "name":"Jhon",
+        "phoneNumber":"1",
+        "email":"jhon.ss@gmail.com",
+        "visited": true
+    },
+    {
+        "id": 3,
+        "code": "789436",
+        "name":"Eva",
+        "phoneNumber":"691544789",
+        "email":"evaluna12@gmail.com",
+        "visited": true
+    },
+    {
+        "id": 4,
+        "code": "991286",
+        "name":"Carlos",
+        "phoneNumber":"651233495",
+        "email":"rc9823@gmail.com",
+        "visited": false
+    },
+    {
+        "id": 5,
+        "code": "000924",
+        "name":"Robert",
+        "phoneNumber":"691544023",
+        "email":"robert@gmail.com",
+        "visited": true
+    },
+    {
+        "id": 6,
+        "code": "222333",
+        "name":"Julio",
+        "phoneNumber":"667822934",
+        "email":"j.r.34@gmail.com",
+        "visited": true
+    },
+    {
+        "id": 7,
+        "code": "663457",
+        "name":"Ron",
+        "phoneNumber":"733944560",
+        "email":"ronnie@gmail.com",
+        "visited": false
+    },
+    {
+        "id": 8,
+        "code": "881993",
+        "name":"Julia",
+        "phoneNumber":"9999999999",
+        "email":"jul.93@gmail.com",
+        "visited": true
+    }
+]

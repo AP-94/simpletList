@@ -1,2 +1,2 @@
-# simpletList
-App demo of a list, with buttons for filter and sort.
+# List Demo
+App demo of a list, with buttons for filter and sort.x

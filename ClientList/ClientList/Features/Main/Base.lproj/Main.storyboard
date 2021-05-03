@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyR-l5-pjW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clients-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ClientListVC" customModule="ClientList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M04-bL-Rlb">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Fm3-Fa-m6Z"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iGj-ob-Xfk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M04-bL-Rlb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Aka-ne-3KO"/>
+                            <constraint firstItem="M04-bL-Rlb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DtZ-Rf-fZa"/>
+                            <constraint firstAttribute="bottom" secondItem="M04-bL-Rlb" secondAttribute="bottom" id="SPi-ny-7FI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M04-bL-Rlb" secondAttribute="trailing" id="hE6-m0-5MB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clients" largeTitleDisplayMode="always" id="Hu2-Az-rSz">
+                        <rightBarButtonItems>
+                            <barButtonItem image="filter-results-button" id="Q4U-q7-Of8">
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="filterButtonTapped:" destination="BYZ-38-t0r" id="eBP-Lv-ikt"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="icOrder" style="done" id="nPM-ay-L6v">
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="orderButtonTapped:" destination="BYZ-38-t0r" id="hjE-5T-kxE"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clientsTableView" destination="M04-bL-Rlb" id="Wzu-Oc-9Fx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.92753623188412" y="88.392857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dpr-7K-dYG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dyR-l5-pjW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Gwn-UQ-RWh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1xy-ik-cqu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkc-T8-DpU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165.21739130434784" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filter-results-button" width="32" height="32"/>
+        <image name="icOrder" width="32" height="32"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
